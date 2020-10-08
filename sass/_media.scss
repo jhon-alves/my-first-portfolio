@@ -1,5 +1,7 @@
-@media (max-width: 900px) {
-
+@media (max-width: 1390px) {
+    #portfolio .content img {
+            width: 750px;
+        }
 }
 
 @media (min-width: 1700px) {
@@ -21,24 +23,10 @@
         p {
             text-align: center; 
         }
-        
     }
 
-    #portfolio {
-        height: auto;
-        padding: 10px;
-        .content {
-            padding: 0px;
-        }
-        img {
-            width: 100%;
-        }
-        .col-md-6 {
-            padding: 40px 0;
-        }
-        .lesign {
-            padding: 70px;
-        }
+    #portfolio .content img {
+        width: 400px;
     }
 }
      

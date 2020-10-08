@@ -206,23 +206,23 @@ main p {
 #portfolio {
   width: 100%;
   height: 100vh;
-  margin: 0 auto;
   background-color: #101010;
   padding: 80px;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #portfolio .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -233,6 +233,32 @@ main p {
   color: #ccc;
   letter-spacing: 1.5px;
   margin-bottom: 1rem;
+}
+
+#portfolio .content .carrousel {
+  padding-top: 40px;
+  border-radius: 20px;
+}
+
+#portfolio .content img {
+  width: 1000px;
+  height: auto;
+  -webkit-box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
+          box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+#portfolio .content img:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  filter: opacity(0.7);
+  -webkit-filter: opacity(0.7);
+}
+
+@media (max-width: 1390px) {
+  #portfolio .content img {
+    width: 750px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -250,21 +276,8 @@ main p {
   #sobre-mim p {
     text-align: center;
   }
-  #portfolio {
-    height: auto;
-    padding: 10px;
-  }
-  #portfolio .content {
-    padding: 0px;
-  }
-  #portfolio img {
-    width: 100%;
-  }
-  #portfolio .col-md-6 {
-    padding: 40px 0;
-  }
-  #portfolio .lesign {
-    padding: 70px;
+  #portfolio .content img {
+    width: 400px;
   }
 }
 
