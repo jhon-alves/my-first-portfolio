@@ -1,0 +1,134 @@
+
+.bg-topo {
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    overflow: hidden;
+}
+
+.page-home {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background: #101010;
+    position: fixed;
+    z-index: 1;
+}
+
+.page-home img {
+    width: 60px;
+    margin: 15px;
+}
+
+.page-home .menu {
+    align-items: center;
+    list-style: none;
+    padding: 34px 0;
+}
+
+.page-home .menu li { 
+    display: inline-block;
+    text-align: center;
+}
+
+.page-home .menu li a { 
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 32px 25px;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.page-home .menu li a:hover { 
+    border-bottom: 2px solid #ffffff;
+}
+
+.page-home .redes-sociais {
+    list-style: none;
+    padding: 15px 0;
+    float: right;
+}
+.page-home .redes-sociais li {
+    display: inline-block;
+}
+
+.page-home .redes-sociais img {
+    width: 30px;
+}
+
+.home-content {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    display: inline;
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #ccc;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .wave-1 {
+    animation: moveWave1 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveWave1 {
+    from {
+      transform: translateX(-2000px);
+    }
+  }
+
+  .wave-2 {
+    animation: moveWave2 3s 1.2s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveWave2 {
+    from {
+      transform: translateX(-1800px);
+    }
+  }
+
+  .wave-3 {
+    animation: moveWave3 3s 0.7s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveWave3 {
+    from {
+      transform: translateX(-1600px);
+    }
+  }
+
+
+
+
+
+/* Copy */
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+footer p {
+    padding: 10px;
+    text-align: center;
+    color: #f1f1f1;
+    margin:0;
+    font-size: 13px;
+}

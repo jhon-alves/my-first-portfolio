@@ -1,0 +1,21 @@
+#skills {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: #101010;
+}
+
+#skills .content {
+    max-width: 1500px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 70px;
+}   
+
+#skills .content .title-skills {
+    text-align: center;
+    color: #ffffff;
+    
+}
