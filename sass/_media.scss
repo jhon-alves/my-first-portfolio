@@ -8,22 +8,11 @@
 
 @media (max-width: 760px) {
 
-    #page-home {
-        width: 100%;
-    }
-    #page-home .content{
-        width: 100%;
-    }
-
-    #page-home .content main img {
-        display: none;
-    }
-
     /* SOBRE MIM */
     #sobre-mim {
         height: auto;
         .content {
-            padding-top: 100px;
+            padding-top: 80px;
         }
         h1 {
             padding-top: 40px;
@@ -36,12 +25,19 @@
     }
 
     #portfolio {
+        height: auto;
         padding: 10px;
         .content {
             padding: 0px;
         }
+        img {
+            width: 100%;
+        }
         .col-md-6 {
             padding: 40px 0;
+        }
+        .lesign {
+            padding: 70px;
         }
     }
 }
