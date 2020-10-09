@@ -1,3 +1,33 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+body {
+  background: #f0f0f5;
+}
+
 .bg-topo {
   width: 100%;
   height: 100vh;
@@ -6,6 +36,8 @@
 }
 
 .page-home {
+  width: 100%;
+  height: 75px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -16,8 +48,6 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   position: relative;
-  width: 100%;
-  height: 65px;
   background: #101010;
   position: fixed;
   z-index: 1;
@@ -25,7 +55,7 @@
 
 .page-home .logotipo {
   width: 50px;
-  margin: 7px;
+  margin-top: 11px;
 }
 
 .page-home .menu {
@@ -34,7 +64,7 @@
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
 .page-home .menu li {
@@ -61,7 +91,7 @@
 
 .page-home .redes-sociais {
   list-style: none;
-  padding: 5px 0;
+  padding: 12px 0;
   float: right;
 }
 
@@ -89,7 +119,7 @@
           align-items: center;
 }
 
-.home-content main p {
+.home-content p {
   display: inline;
   font-size: 60px;
   color: #ffffff;
@@ -100,71 +130,6 @@
   width: 250px;
 }
 
-.waves {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.wave-1 {
-  -webkit-animation: moveWave1 3s ease-in-out infinite alternate;
-          animation: moveWave1 3s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes moveWave1 {
-  from {
-    -webkit-transform: translateX(-2000px);
-            transform: translateX(-2000px);
-  }
-}
-
-@keyframes moveWave1 {
-  from {
-    -webkit-transform: translateX(-2000px);
-            transform: translateX(-2000px);
-  }
-}
-
-.wave-2 {
-  -webkit-animation: moveWave2 3s 1.2s ease-in-out infinite alternate;
-          animation: moveWave2 3s 1.2s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes moveWave2 {
-  from {
-    -webkit-transform: translateX(-1800px);
-            transform: translateX(-1800px);
-  }
-}
-
-@keyframes moveWave2 {
-  from {
-    -webkit-transform: translateX(-1800px);
-            transform: translateX(-1800px);
-  }
-}
-
-.wave-3 {
-  -webkit-animation: moveWave3 3s 0.7s ease-in-out infinite alternate;
-          animation: moveWave3 3s 0.7s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes moveWave3 {
-  from {
-    -webkit-transform: translateX(-1600px);
-            transform: translateX(-1600px);
-  }
-}
-
-@keyframes moveWave3 {
-  from {
-    -webkit-transform: translateX(-1600px);
-            transform: translateX(-1600px);
-  }
-}
-
-/* Sobre Mim */
 #sobre-mim {
   width: 100%;
   height: 100vh;
@@ -194,7 +159,7 @@
 }
 
 #sobre-mim .content img {
-  width: 280px;
+  width: 250px;
   border-radius: 50%;
 }
 
@@ -210,6 +175,14 @@
 
 #sobre-mim .content p, #sobre-mim .content h1 {
   color: #ccc;
+}
+
+#sobre-mim .content h1 {
+  font-size: 50px;
+}
+
+#sobre-mim .content p {
+  font-size: 19px;
 }
 
 #portfolio {
@@ -274,33 +247,5 @@
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-}
-
-* {
-  margin: 0 auto;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-family: 'Roboto', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-body {
-  background: #f0f0f5;
 }
 /*# sourceMappingURL=main.css.map */
