@@ -17,23 +17,24 @@
           justify-content: space-evenly;
   position: relative;
   width: 100%;
-  height: 90px;
+  height: 65px;
   background: #101010;
   position: fixed;
   z-index: 1;
 }
 
-.page-home img {
-  width: 60px;
-  margin: 15px;
+.page-home .logotipo {
+  width: 50px;
+  margin: 7px;
 }
 
 .page-home .menu {
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  padding: 34px 0;
+  padding: 20px 0;
 }
 
 .page-home .menu li {
@@ -44,20 +45,23 @@
 .page-home .menu a {
   color: #f1f1f1;
   text-decoration: none;
-  padding: 32px 25px;
+  margin: 32px 25px;
   margin-top: 0;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .page-home .menu a:hover {
-  border-bottom: 2px solid #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #ccc;
 }
 
 .page-home .redes-sociais {
   list-style: none;
-  padding: 15px 0;
+  padding: 5px 0;
   float: right;
 }
 
@@ -66,7 +70,8 @@
 }
 
 .page-home .redes-sociais img {
-  width: 30px;
+  width: 25px;
+  margin: 15px 10px;
 }
 
 .home-content {
@@ -84,11 +89,15 @@
           align-items: center;
 }
 
-main p {
+.home-content main p {
   display: inline;
   font-size: 60px;
   color: #ffffff;
   text-shadow: 2px 2px 4px #ccc;
+}
+
+.home-content img {
+  width: 250px;
 }
 
 .waves {
@@ -220,6 +229,7 @@ main p {
 }
 
 #portfolio .content {
+  width: 1100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,20 +239,8 @@ main p {
   text-align: center;
 }
 
-#portfolio .content h1 {
-  color: #ccc;
-  letter-spacing: 1.5px;
-  margin-bottom: 1rem;
-}
-
-#portfolio .content .carrousel {
-  padding-top: 40px;
-  border-radius: 20px;
-}
-
 #portfolio .content img {
-  width: 1000px;
-  height: auto;
+  width: 800px;
   -webkit-box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
           box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
   border-radius: 20px;
@@ -253,12 +251,6 @@ main p {
   transition: 0.5s;
   filter: opacity(0.7);
   -webkit-filter: opacity(0.7);
-}
-
-@media (max-width: 1390px) {
-  #portfolio .content img {
-    width: 750px;
-  }
 }
 
 @media (max-width: 760px) {
@@ -277,7 +269,10 @@ main p {
     text-align: center;
   }
   #portfolio .content img {
-    width: 400px;
+    width: 100vw;
+    padding: 5px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 

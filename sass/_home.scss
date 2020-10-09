@@ -11,19 +11,20 @@
   justify-content: space-evenly;
   position: relative;
   width: 100%;
-  height: 90px;
+  height: 65px;
   background: #101010;
   position: fixed;
   z-index: 1;
-  img {
-    width: 60px;
-    margin: 15px;
+  .logotipo {
+    width: 50px;
+    margin: 7px;
   }
 
   .menu {
+    text-align: center;
     align-items: center;
     list-style: none;
-    padding: 34px 0;
+    padding: 20px 0;
     li { 
       display: inline-block;
       text-align: center;
@@ -31,50 +32,56 @@
     a { 
       color: #f1f1f1;
       text-decoration: none;
-      padding: 32px 25px;
+      margin: 32px 25px;
       margin-top: 0;
-      font-size: 14px;
-      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 700;
       text-transform: uppercase;
-    }
-    a:hover { 
-      border-bottom: 2px solid #ffffff;
+      &:hover {
+        transition: 0.5s;
+        color: #ccc;
+      }
     }
   }
+
   .redes-sociais {
     list-style: none;
-    padding: 15px 0;
+    padding: 5px 0;
     float: right;
     li {
       display: inline-block;
     }
     img {
-      width: 30px;
+      width: 25px;
+      margin: 15px 10px;
     }
   }
 }
 
 .home-content {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-main p {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  main p {
     display: inline;
     font-size: 60px;
     color: #ffffff;
     text-shadow: 2px 2px 4px #ccc;
+  }
+  img {
+    width: 250px;
+  }
 }
 
 .waves {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   }
 
   .wave-1 {

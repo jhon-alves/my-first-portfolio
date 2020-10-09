@@ -1,7 +1,4 @@
 @media (max-width: 1390px) {
-    #portfolio .content img {
-            width: 750px;
-        }
 }
 
 @media (min-width: 1700px) {
@@ -25,8 +22,15 @@
         }
     }
 
-    #portfolio .content img {
-        width: 400px;
+    #portfolio {
+        .content {
+    
+            img {
+                width: 100vw;
+                padding: 5px;
+                box-shadow: none;
+            }
+        }
     }
 }
      
