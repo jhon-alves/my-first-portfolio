@@ -26,3 +26,61 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background: #f0f0f5;
 }
+
+.bg-topo {
+  width: 100%;
+  height: 75px;
+
+  .page-home {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    
+  .logotipo {
+    width: 50px;
+    margin-top: 11px;
+  }
+
+  .menu {
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    padding: 25px 0;
+
+    li { 
+      display: inline-block;
+      text-align: center;
+    }
+
+    a { 
+      color: #f1f1f1;
+      text-decoration: none;
+      margin: 32px 25px;
+      margin-top: 0;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+      &:hover {
+        transition: 0.5s;
+        color: #ccc;
+      }
+    }
+  }
+
+  .redes-sociais {
+    list-style: none;
+    padding: 12px 0;
+    float: right;
+    li {
+      display: inline-block;
+    }
+    img {
+      width: 25px;
+      margin: 15px 10px;
+    }
+  }
+}
