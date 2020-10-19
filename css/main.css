@@ -35,7 +35,7 @@ body {
   z-index: 10;
 }
 
-.page-home {
+.bg-topo .page-home {
   width: 100%;
   height: 75px;
   display: -webkit-box;
@@ -44,16 +44,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
-  z-index: 10;
 }
 
-.page-home .logotipo {
+.bg-topo .page-home .logotipo {
   width: 50px;
   margin-top: 11px;
 }
 
-.page-home .menu {
+.bg-topo .page-home .menu {
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -62,12 +60,12 @@ body {
   padding: 25px 0;
 }
 
-.page-home .menu li {
+.bg-topo .page-home .menu li {
   display: inline-block;
   text-align: center;
 }
 
-.page-home .menu a {
+.bg-topo .page-home .menu a {
   color: #f1f1f1;
   text-decoration: none;
   margin: 32px 25px;
@@ -78,23 +76,23 @@ body {
   text-transform: uppercase;
 }
 
-.page-home .menu a:hover {
+.bg-topo .page-home .menu a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #ccc;
 }
 
-.page-home .redes-sociais {
+.bg-topo .page-home .redes-sociais {
   list-style: none;
   padding: 12px 0;
   float: right;
 }
 
-.page-home .redes-sociais li {
+.bg-topo .page-home .redes-sociais li {
   display: inline-block;
 }
 
-.page-home .redes-sociais img {
+.bg-topo .page-home .redes-sociais img {
   width: 25px;
   margin: 15px 10px;
 }
@@ -181,11 +179,11 @@ body {
   font-size: 19px;
 }
 
-#portfolio {
+.portfolio {
+  background-image: url(../images/bg-02.svg);
+  background-size: cover;
   width: 100%;
   height: 100vh;
-  background-color: #101010;
-  padding: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,25 +195,26 @@ body {
           justify-content: center;
 }
 
-#portfolio .content {
+.portfolio .carrousel {
   width: 1100px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#portfolio .content img {
+.portfolio .carrousel img {
   width: 800px;
+  height: auto;
   -webkit-box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
           box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.1);
   border-radius: 20px;
 }
 
-#portfolio .content img:hover {
+.portfolio .carrousel img:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   filter: opacity(0.7);
