@@ -1,3 +1,3 @@
-# jhowalves-website
+# Jhow Alves
 
 ### My portifolio
