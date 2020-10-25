@@ -5,14 +5,17 @@
 
 }
 
-@media (max-width: 760px) {
-
+@media (max-width: 800px) {
+    
     .home-content {
-        background-image: url(../images/bg-02.svg);
+        h1 {
+            font-size: 160px;
+        }
     }
 
     #about {
-        height: auto;
+        height: 100%;
+        padding: 20px;
 
         .content-about {
             padding-top: 90px;
@@ -21,7 +24,6 @@
         }
         
         .text-about {
-            padding: 15px;
 
             h1 {
                 padding-top: 40px;
@@ -39,6 +41,7 @@
 
             .img-mobile {
                 display: inline;
+                width: 350px;
             }
             
             img {
@@ -46,6 +49,41 @@
                 padding: 5px;
                 box-shadow: none;
             }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+
+    .home-content {
+        h1 {
+            font-size: 140px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .home-content {
+        h1 {
+            font-size: 120px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .home-content {
+        h1 {
+            font-size: 100px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .home-content {
+        h1 {
+            font-size: 70px;
         }
     }
 }

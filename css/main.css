@@ -154,10 +154,6 @@ body {
   border-radius: 50%;
 }
 
-#about .content-about .text-about {
-  padding-left: 80px;
-}
-
 #about .content-about .text-about p, #about .content-about .text-about h1 {
   color: #ccc;
 }
@@ -215,12 +211,13 @@ body {
   -webkit-filter: opacity(0.7);
 }
 
-@media (max-width: 760px) {
-  .home-content {
-    background-image: url(../images/bg-02.svg);
+@media (max-width: 800px) {
+  .home-content h1 {
+    font-size: 160px;
   }
   #about {
-    height: auto;
+    height: 100%;
+    padding: 20px;
   }
   #about .content-about {
     padding-top: 90px;
@@ -230,9 +227,6 @@ body {
             flex-direction: column;
     text-align: center;
   }
-  #about .text-about {
-    padding: 15px;
-  }
   #about .text-about h1 {
     padding-top: 40px;
   }
@@ -241,12 +235,37 @@ body {
   }
   .portfolio .carrousel .img-mobile {
     display: inline;
+    width: 350px;
   }
   .portfolio .carrousel img {
     width: 100%;
     padding: 5px;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-content h1 {
+    font-size: 140px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-content h1 {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-content h1 {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-content h1 {
+    font-size: 70px;
   }
 }
 /*# sourceMappingURL=main.css.map */
