@@ -54,16 +54,14 @@ body {
 
 .bg-topo .page-home .logotipo {
   width: 50px;
-  margin-top: 11px;
+  margin-top: 12px;
 }
 
 .bg-topo .page-home .menu {
-  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style: none;
-  padding: 25px 0;
+  padding: 29px 0;
 }
 
 .bg-topo .page-home .menu li {
@@ -72,7 +70,7 @@ body {
 }
 
 .bg-topo .page-home .menu a {
-  color: #f1f1f1;
+  color: #fff;
   text-decoration: none;
   margin: 32px 25px;
   margin-top: 0;
@@ -80,12 +78,11 @@ body {
   letter-spacing: 2px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-bottom: 7px;
 }
 
 .bg-topo .page-home .menu a:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  color: #ccc;
+  border-bottom: 2px solid #fff;
 }
 
 .bg-topo .page-home .redes-sociais {
@@ -116,6 +113,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .home-content h1 {
@@ -125,6 +126,14 @@ body {
   text-shadow: 2px 2px 4px #ccc;
   -webkit-transform: rotate(-12deg);
           transform: rotate(-12deg);
+  font-weight: 500;
+}
+
+.home-content h2 {
+  font-family: 'Roboto';
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #ccc;
 }
 
 #about {
@@ -138,6 +147,9 @@ body {
 
 #about .content-about {
   max-width: 1100px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,9 +161,18 @@ body {
           justify-content: space-between;
 }
 
+#about .content-about .photo {
+  width: 250px;
+  border-radius: 50%;
+}
+
 #about .content-about .photo img {
   width: 250px;
   border-radius: 50%;
+}
+
+#about .content-about .text-about {
+  width: 600px;
 }
 
 #about .content-about .text-about p, #about .content-about .text-about h1 {
@@ -160,10 +181,12 @@ body {
 
 #about .content-about .text-about h1 {
   font-size: 50px;
+  font-weight: 500;
 }
 
 #about .content-about .text-about p {
   font-size: 19px;
+  line-height: 28px;
 }
 
 .portfolio {
@@ -211,6 +234,16 @@ body {
   -webkit-filter: opacity(0.7);
 }
 
+@media (max-width: 900px) {
+  .bg-topo {
+    width: 100%;
+    height: 75px;
+  }
+  .bg-topo .page-home .logotipo {
+    margin: 11px 20px;
+  }
+}
+
 @media (max-width: 800px) {
   .home-content h1 {
     font-size: 160px;
@@ -227,8 +260,14 @@ body {
             flex-direction: column;
     text-align: center;
   }
-  #about .text-about h1 {
-    padding-top: 40px;
+  #about .content-about .text-about {
+    width: 100%;
+  }
+  #about .content-about .text-about h1 {
+    padding: 40px 0 0 0;
+  }
+  #about .content-about .text-about p {
+    padding: 10px 0 0 0;
   }
   .portfolio .carrousel .img-desktop {
     display: none;

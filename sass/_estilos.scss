@@ -45,49 +45,50 @@ body {
     display: flex;
     justify-content: space-between;
     
-  .logotipo {
-    width: 50px;
-    margin-top: 11px;
-  }
-
-  .menu {
-    text-align: center;
-    align-items: center;
-    list-style: none;
-    padding: 25px 0;
-
-    li { 
-      display: inline-block;
-      text-align: center;
+    .logotipo {
+      width: 50px;
+      margin-top: 12px;
     }
+      
+    .menu {
+      align-items: center;
+      padding: 29px 0;
 
-    a { 
-      color: #f1f1f1;
-      text-decoration: none;
-      margin: 32px 25px;
-      margin-top: 0;
-      font-size: 12px;
-      letter-spacing: 2px;
-      font-weight: 700;
-      text-transform: uppercase;
-      &:hover {
-        transition: 0.5s;
-        color: #ccc;
+      li { 
+        display: inline-block;
+        text-align: center;
+      }
+
+      a { 
+        color: #fff;
+        text-decoration: none;
+        margin: 32px 25px;
+        margin-top: 0;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 7px;
+        
+        &:hover {
+          border-bottom: 2px solid #fff;
+        }
       }
     }
-  }
 
-  .redes-sociais {
-    list-style: none;
-    padding: 12px 0;
-    float: right;
-    li {
-      display: inline-block;
+    .redes-sociais {
+      list-style: none;
+      padding: 12px 0;
+      float: right;
+
+      li {
+        display: inline-block;
+      }
+
+      img {
+        width: 25px;
+        margin: 15px 10px;
+      }
     }
-    img {
-      width: 25px;
-      margin: 15px 10px;
-    }
-  }
   }
 }
