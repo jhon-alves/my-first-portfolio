@@ -13,13 +13,18 @@
     
         .photo {
             width: 250px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             border-radius: 50%;
+
             
             img {
                 width: 250px;
-                border-radius: 50%;
+                border-radius: 50%; 
             }
         }
+        
 
         .text-about {
             width: 600px;
@@ -36,6 +41,19 @@
             p {
                 font-size: 19px;
                 line-height: 28px;
+            }
+
+            .redes-sociais {
+                list-style: none;
+                padding: 12px 0;
+                display: flex;
+                float: left;
+
+                    img {
+                        width: 25px;
+                        margin: 15px 10px;
+                    }
+                
             }
         }
     }

@@ -43,11 +43,16 @@ body {
     width: 100%;
     height: 75px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     
-    .logotipo {
+    .logo {
       width: 50px;
       margin-top: 12px;
+      font-family: 'Playlist Script';
+      color: #fff;
+      transform: rotate(-8deg);
+      font-weight: 500;
     }
       
     .menu {
@@ -73,21 +78,6 @@ body {
         &:hover {
           border-bottom: 2px solid #fff;
         }
-      }
-    }
-
-    .redes-sociais {
-      list-style: none;
-      padding: 12px 0;
-      float: right;
-
-      li {
-        display: inline-block;
-      }
-
-      img {
-        width: 25px;
-        margin: 15px 10px;
       }
     }
   }

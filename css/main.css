@@ -47,14 +47,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.bg-topo .page-home .logotipo {
+.bg-topo .page-home .logo {
   width: 50px;
   margin-top: 12px;
+  font-family: 'Playlist Script';
+  color: #fff;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+  font-weight: 500;
 }
 
 .bg-topo .page-home .menu {
@@ -83,21 +91,6 @@ body {
 
 .bg-topo .page-home .menu a:hover {
   border-bottom: 2px solid #fff;
-}
-
-.bg-topo .page-home .redes-sociais {
-  list-style: none;
-  padding: 12px 0;
-  float: right;
-}
-
-.bg-topo .page-home .redes-sociais li {
-  display: inline-block;
-}
-
-.bg-topo .page-home .redes-sociais img {
-  width: 25px;
-  margin: 15px 10px;
 }
 
 .home-content {
@@ -163,6 +156,16 @@ body {
 
 #about .content-about .photo {
   width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 50%;
 }
 
@@ -187,6 +190,20 @@ body {
 #about .content-about .text-about p {
   font-size: 19px;
   line-height: 28px;
+}
+
+#about .content-about .text-about .redes-sociais {
+  list-style: none;
+  padding: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+}
+
+#about .content-about .text-about .redes-sociais img {
+  width: 25px;
+  margin: 15px 10px;
 }
 
 .portfolio {
