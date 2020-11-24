@@ -10,24 +10,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    
-        .photo {
-            width: 250px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            border-radius: 50%;
-
-            
-            img {
-                width: 250px;
-                border-radius: 50%; 
-            }
-        }
-        
 
         .text-about {
             width: 600px;
+            text-align: center;
 
             p, h1 {
                 color: #ccc;  
@@ -36,24 +22,23 @@
             h1 {
                 font-size: 50px;
                 font-weight: 500;
+                padding-bottom: 20px;
             }
 
             p {
                 font-size: 19px;
-                line-height: 28px;
+                line-height: 1.5;
             }
 
             .redes-sociais {
                 list-style: none;
                 padding: 12px 0;
                 display: flex;
-                float: left;
 
-                    img {
-                        width: 25px;
-                        margin: 15px 10px;
-                    }
-                
+                img {
+                    width: 25px;
+                    margin: 15px 10px;
+                }
             }
         }
     }
