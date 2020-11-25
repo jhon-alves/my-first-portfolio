@@ -6,7 +6,7 @@
       
         .page-home {
           
-            .logotipo {
+            .logo {
                 margin: 11px 20px;
             }
         }
@@ -47,15 +47,6 @@
     .portfolio {
 
         .carrousel {
-
-            .img-desktop {
-                display: none;
-            }
-
-            .img-mobile {
-                display: inline;
-                width: 350px;
-            }
             
             img {
                 width: 100%;
@@ -99,7 +90,5 @@
             font-size: 70px;
         }
     }
-
-
 }
      
