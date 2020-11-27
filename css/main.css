@@ -105,14 +105,14 @@ body {
   transition: .7s;
 }
 
+[data-animate="appear"] {
+  -webkit-transform: translate3d(0, 0, -100px);
+          transform: translate3d(0, 0, -100px);
+}
+
 [data-animate="left"] {
   -webkit-transform: translate3d(-100px, 0, 0);
           transform: translate3d(-100px, 0, 0);
-}
-
-[data-animate="right"] {
-  -webkit-transform: translate3d(100px, 0, 0);
-          transform: translate3d(100px, 0, 0);
 }
 
 [data-animate].anime {
