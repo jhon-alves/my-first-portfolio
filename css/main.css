@@ -71,6 +71,13 @@ body {
   padding: 29px 0;
 }
 
+.bg-top .page-home .menu .nav_toggle {
+  display: none;
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+}
+
 .bg-top .page-home .menu li {
   display: inline-block;
   text-align: center;
@@ -318,14 +325,11 @@ body {
 }
 
 @media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
   .home-content h1 {
     font-size: 120px;
-  }
-}
-
-@media (max-width: 500px) {
-  .home-content h1 {
-    font-size: 100px;
   }
   #works {
     height: 100%;
@@ -340,6 +344,12 @@ body {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     grid-gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-content h1 {
+    font-size: 100px;
   }
 }
 

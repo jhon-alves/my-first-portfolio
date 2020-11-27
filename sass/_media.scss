@@ -68,18 +68,13 @@
 
 @media (max-width: 600px) {
 
+    .menu {
+        display: none;
+    }
+
     .home-content {
         h1 {
             font-size: 120px;
-        }
-    }
-}
-
-@media (max-width: 500px) {
-
-    .home-content {
-        h1 {
-            font-size: 100px;
         }
     }
 
@@ -95,6 +90,17 @@
             grid-gap: 20px;
         }
     }
+}
+
+@media (max-width: 500px) {
+
+    .home-content {
+        h1 {
+            font-size: 100px;
+        }
+    }
+
+    
 }
 
 @media (max-width: 400px) {

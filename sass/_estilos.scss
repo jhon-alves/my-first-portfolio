@@ -58,6 +58,13 @@ body {
       align-items: center;
       padding: 29px 0;
 
+      .nav_toggle {
+        display: none;
+        color: #fff;
+        font-size: 35px;
+        cursor: pointer;
+      }
+
       li { 
         display: inline-block;
         text-align: center;
