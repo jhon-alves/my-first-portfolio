@@ -286,12 +286,8 @@ body {
 }
 
 @media (max-width: 800px) {
-  .home-content h1 {
-    font-size: 160px;
-  }
   #about {
     height: 100%;
-    padding: 20px;
   }
   #about .content-about {
     padding-top: 90px;
@@ -324,17 +320,11 @@ body {
     top: 0;
     left: 0;
   }
-  .home-content h1 {
-    font-size: 140px;
-  }
 }
 
 @media (max-width: 600px) {
   .menu {
     display: none;
-  }
-  .home-content h1 {
-    font-size: 120px;
   }
   #works {
     height: 100%;
@@ -353,14 +343,14 @@ body {
 }
 
 @media (max-width: 500px) {
-  .home-content h1 {
-    font-size: 100px;
+  #home-content img {
+    width: 300px;
   }
 }
 
 @media (max-width: 400px) {
-  .home-content h1 {
-    font-size: 70px;
+  #home-content img {
+    width: 250px;
   }
   #works {
     height: 100%;
