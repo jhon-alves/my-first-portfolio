@@ -59,6 +59,12 @@
 
 @media (max-width: 700px) {
 
+    .bg-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     .home-content {
         h1 {
             font-size: 140px;
