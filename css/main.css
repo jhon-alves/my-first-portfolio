@@ -375,7 +375,7 @@ body {
     width: 100%;
     height: 200px;
   }
-  #contact .hire h1 {
+  .title-contact {
     padding: 0 10px;
     font-size: 60px;
   }
