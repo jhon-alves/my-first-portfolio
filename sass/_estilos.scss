@@ -4,6 +4,12 @@
   font-size: 1em;
 }
 
+@font-face {
+  font-family: 'Intro Demo';
+  src: url("../fonts/IntroDemo-BlackCAPS.otf");
+  font-size: 1em;
+}
+
 * {
   margin: 0 auto;
   padding: 0;
@@ -25,7 +31,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Intro Demo', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -41,13 +47,12 @@ body {
   background: #101010;
 
   .page-home {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     
     .logo {
-      width: 50px;
-      margin-top: 12px;
       font-family: 'Playlist Script';
       color: #fff;
       transform: rotate(-8deg);
@@ -105,4 +110,16 @@ body {
 [data-animate].anime {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
+}
+
+.copy {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+
+  img {
+    width: 40px;
+    user-select: none;
+  }
 }

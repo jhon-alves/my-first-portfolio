@@ -4,6 +4,12 @@
   font-size: 1em;
 }
 
+@font-face {
+  font-family: 'Intro Demo';
+  src: url("../fonts/IntroDemo-BlackCAPS.otf");
+  font-size: 1em;
+}
+
 * {
   margin: 0 auto;
   padding: 0;
@@ -26,7 +32,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Intro Demo', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -43,6 +49,7 @@ body {
 }
 
 .bg-top .page-home {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,8 +62,6 @@ body {
 }
 
 .bg-top .page-home .logo {
-  width: 50px;
-  margin-top: 12px;
   font-family: 'Playlist Script';
   color: #fff;
   -webkit-transform: rotate(-8deg);
@@ -121,6 +126,25 @@ body {
           transform: translate3d(0px, 0px, 0px);
 }
 
+.copy {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.copy img {
+  width: 40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 #home-content {
   background-color: #101010;
   width: 100%;
@@ -143,6 +167,10 @@ body {
 .animate-rotate {
   -webkit-animation: rotate 8s linear infinite;
           animation: rotate 8s linear infinite;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @-webkit-keyframes rotate {
@@ -191,7 +219,7 @@ body {
 }
 
 #about .content-about .text-about h1 {
-  font-size: 60px;
+  font-size: 65px;
   font-weight: 800;
   padding-bottom: 20px;
 }
@@ -259,6 +287,10 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #works .cards .card img {
@@ -304,7 +336,7 @@ body {
     padding: 40px 0 0 0;
   }
   #about .content-about .text-about p {
-    padding: 10px 0 0 0;
+    padding: 10px 5px;
   }
 }
 
@@ -320,13 +352,17 @@ body {
   .menu {
     display: none;
   }
+  #about {
+    height: 100%;
+    padding-bottom: 60px;
+  }
   #works {
     height: 100%;
     padding: 90px 0;
   }
   #works .cards {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 25px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -380,23 +416,38 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#contact .hire {
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-#contact h1 {
+#contact .hire h1 {
   color: #000;
   font-size: 80px;
   padding-bottom: 50px;
+  text-align: center;
 }
 
-#contact .whatsapp {
+#contact .hire .whatsapp {
   border: 3px solid #000;
   color: #000;
   padding: 20px 40px;
   font-weight: 600;
   font-size: 20px;
+  -webkit-transition: background .6s;
+  transition: background .6s;
+}
+
+#contact .hire .whatsapp:hover {
+  background: #000;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
