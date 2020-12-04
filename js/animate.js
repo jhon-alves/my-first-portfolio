@@ -7,9 +7,9 @@ function animeScroll() {
     if((windowTop) > element.offsetTop) {
       element.classList.add(animationClass);
     } 
-    //else {
-    //  element.classList.remove(animationClass);
-    //}
+    else {
+      element.classList.remove(animationClass);
+    }
   });
 }
 
