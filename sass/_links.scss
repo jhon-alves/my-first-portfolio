@@ -1,0 +1,79 @@
+#links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+
+
+  .photo > img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 70px 0;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .buttons > a {
+    width: 600px;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.6s;
+  }
+
+  .buttons > a:hover {
+    background-color: #fff;
+    color: #101010;
+  }
+
+  .btn-mdu {
+    background-color: #D53636;
+    border: 2px solid #D53636 !important;
+  }
+
+  .btn-mdu:hover {
+    background-color: #B53030 !important;
+    border: 2px solid #A12E2E !important;
+    color: #fff !important;
+  }
+
+  .btn-whats {
+    background-color: #0dc143;
+    border: 2px solid #0dc143 !important;
+  }
+
+  .btn-whats:hover {
+    background-color: #0C9434 !important;
+    border: 2px solid #0C9434 !important;
+    color: #fff !important;
+  }
+
+  .signature {
+    margin: 40px;
+  }
+
+  .signature > h1 {
+    font-family: Playlist Script;
+    color: #fff;
+    font-size: 30px;
+  }
+
+
+}
+
+@media screen and (max-width: 700px) {
+  .buttons > a {
+    width: 90% !important;
+  }
+}
