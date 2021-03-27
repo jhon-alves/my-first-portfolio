@@ -472,6 +472,11 @@ body {
   color: #fff;
 }
 
+a {
+  margin: 0;
+  padding: 0;
+}
+
 #links {
   width: 100%;
   display: -webkit-box;
@@ -488,14 +493,18 @@ body {
   padding: 0;
 }
 
-#links .photo > img {
-  width: 200px;
-  border-radius: 50%;
-  margin: 70px 0;
+#links .signature {
+  margin: 20px;
+}
+
+#links .signature h1 {
+  font-family: Playlist Script;
+  color: #fff;
+  font-size: 25px;
 }
 
 #links .buttons {
-  width: 100%;
+  width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,65 +515,61 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  list-style: none;
 }
 
-#links .buttons > a {
-  width: 600px;
+#links .buttons li {
+  margin: 20px;
+  width: 90%;
+}
+
+#links .buttons .btn-mdu {
+  width: 90%;
+  border-radius: 30px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+#links .buttons .btn-mdu:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#links .buttons .btn-mdu img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#links .buttons .btn-whats {
+  width: 90%;
   padding: 20px 0;
   margin-bottom: 15px;
-  color: #fff;
   border: 2px solid #fff;
   border-radius: 30px;
   text-align: center;
   letter-spacing: 1px;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
-}
-
-#links .buttons > a:hover {
-  background-color: #fff;
-  color: #101010;
-}
-
-#links .btn-mdu {
-  background-color: #D53636;
-  border: 2px solid #D53636 !important;
-}
-
-#links .btn-mdu:hover {
-  background-color: #B53030 !important;
-  border: 2px solid #A12E2E !important;
-  color: #fff !important;
-}
-
-#links .btn-whats {
   background-color: #0dc143;
   border: 2px solid #0dc143 !important;
 }
 
-#links .btn-whats:hover {
+#links .buttons .btn-whats:hover {
   background-color: #0C9434 !important;
   border: 2px solid #0C9434 !important;
-  color: #fff !important;
 }
 
-#links .signature {
-  margin: 20px;
-}
-
-#links .signature > h1 {
-  font-family: Playlist Script;
+#links .buttons .btn-whats a {
   color: #fff;
-  font-size: 25px;
+}
+
+#links .buttons .btn-whats:hover {
+  background-color: #fff;
+  color: #101010;
 }
 
 @media screen and (max-width: 700px) {
-  .photo > img {
-    width: 180px !important;
-    margin: 50px 0 !important;
-  }
-  .buttons > a {
-    width: 90% !important;
+  .buttons {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
